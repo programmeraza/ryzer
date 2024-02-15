@@ -1,0 +1,124 @@
+.header {
+    background-color: black;
+    border-bottom: 1px solid rgb(75, 237, 0);
+}
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 15px;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.header__icon {
+    display: flex;
+    gap: 30px;
+}
+
+.header__li {
+    font-size: 16px;
+    color: #a9a8a8;
+    transition: all 0.5s;
+    &:hover {
+        color: #fff;
+    }
+    @media (max-width: 786px) {
+      display: none;  
+    }
+}
+
+.header__logo {
+    @media (max-width: 786px) {
+        margin: 0 auto;
+    }
+}
+
+.header__link {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.header__lili {
+    width: 60px;
+    height: 25px;
+    background-color: rgb(75, 237, 0);
+    color: #a9a8a8;
+    border-radius: 8px;
+    text-align: center;
+    align-items: center;
+    padding-top: 2px;
+    margin-top: 1px;
+    transition: all 0.5s;
+    &:hover {
+        color: #fff;
+        background: none;
+    }
+}
+
+.header__bur {
+    display: none;
+    background-color: transparent;
+.short {
+    width: 20px;
+}    
+    @media (max-width: 786px) {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        gap: 5px;
+    }
+    span {
+        background-color: #fff;
+        display: block;
+        width: 30px;
+        height: 1px;
+    }
+}
+
+.header__open {
+    display: none;
+    @media (max-width: 786px) {
+        display: block;
+    }
+}
+
+.EZDrawer {
+    position: absolute;
+}
+
+.header__links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.header__open {
+    background-color: grey !important;
+}
+
+.header__search {
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 10px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+    border: none;
+}
