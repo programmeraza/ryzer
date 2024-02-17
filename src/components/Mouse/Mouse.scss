@@ -1,90 +1,3 @@
-
-* {
-    padding: 0px;
-    margin: 0px;
-    border: 0px;
-}
-
-*,
-*:before,
-*:after {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-html {
-    scroll-behavior: smooth;
-  }
-aside,
-nav,
-footer,
-header,
-section {
-    display: block;
-}
-
-body {
-    -ms-text-size-adjust: 100%;
-    -moz-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-    color: #fff;
-    background-color: #000;
-    font-family: 'Titillium Web', '微軟正黑體', Arial, '蘭亭黑 - 繁', '黑體 - 繁', sans-serif;
-}
-
-.container {
-    width: 95%;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-input::-ms-clear {
-    display: none;
-}
-
-button {
-    cursor: pointer;
-}
-
-button::-moz-focus-inner {
-    padding: 0;
-    border: 0;
-}
-
-a,
-a:visited {
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: none;
-}
-
-ul li {
-    list-style: none;
-}
-
-img {
-    vertical-align: top;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: inherit;
-    font-size: inherit;
-}
-
-*::selection {
-    background-color: rgb(75, 237, 0);
-    color: #000;
-}
-
-// catalog
-
 .catalog {
     margin: 20px 0;
 
@@ -104,7 +17,6 @@ h6 {
         font-family: sans-serif;
         margin: 20px 0 50px;
         border-bottom: 2px solid #44d62c;
-        margin: 70px 0;
     }
     &__desc {
         font-size: 13px;
@@ -169,27 +81,4 @@ h6 {
             transition: scale 0.2s ease;
         }
     }
-}
-
-* {
-        /* width */
-::-webkit-scrollbar {
-    width: 10px !important;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #252525 !important;
-  }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: rgb(75, 237, 0) !important;
-    border-radius: 8px !important;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:active {
-    background: #fff !important;
-  }
 }

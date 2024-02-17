@@ -41,7 +41,7 @@ const Header = () => {
                     <Link>
                       <li className="header__link">Services</li>
                     </Link>
-                    <Link>
+                    <Link to={'/latest'}>
                       <li className="header__link">Store</li>
                     </Link>
                     <Link>
@@ -59,10 +59,10 @@ const Header = () => {
                 </Link>
                 <nav>
                 <ul className='header__link'>
-                   <Link to={'/latest'} className="header__nav">
+                   <Link className="header__nav">
                       <li className="header__li">PC</li>
                     </Link>
-                    <Link to={'*'}>
+                    <Link>
                       <li className="header__li">Mobile</li>
                     </Link>
                     <Link>
@@ -71,7 +71,7 @@ const Header = () => {
                     <Link>
                       <li className="header__li">Services</li>
                     </Link>
-                    <Link>
+                    <Link to={'/latest'}>
                       <li className="header__li">Store</li>
                     </Link>
                     <Link>

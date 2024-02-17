@@ -1,14 +1,12 @@
 import React from 'react'
 import Header from '../components/Header/Header'
-import Options from '../components/Options/Options'
 
-const Store = () => {
+const Signup = () => {
   return (
     <>
     <Header />
-    <Options />
     </>
   )
 }
 
-export default Store
+export default Signup

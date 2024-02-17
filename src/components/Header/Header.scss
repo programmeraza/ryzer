@@ -1,12 +1,16 @@
 .header {
     background-color: black;
     border-bottom: 1px solid rgb(75, 237, 0);
+
+    position: sticky;
+    top: 0;
+    background-color: #000;
+    z-index: 999;
 }
 
 .container {
-    width: 100%;
-    max-width: 1440px;
-    height: auto;
+    width: 95%;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
