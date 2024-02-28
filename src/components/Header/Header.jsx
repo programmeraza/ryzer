@@ -27,9 +27,9 @@ const Header = () => {
                 direction='top'
                 className='header__open'
             >
-                <div>
+                <div className='header__bgd'>
                   <ul className='header__links'>
-                   <Link className="header__nav">
+                   <Link to={'/pc'} className="header__nav">
                       <li className="header__link">PC</li>
                     </Link>
                     <Link>
@@ -59,7 +59,7 @@ const Header = () => {
                 </Link>
                 <nav>
                 <ul className='header__link'>
-                   <Link className="header__nav">
+                   <Link to={'/pc'} className="header__nav">
                       <li className="header__li">PC</li>
                     </Link>
                     <Link>

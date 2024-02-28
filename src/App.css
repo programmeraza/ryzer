@@ -63,23 +63,3 @@
 .read-the-docs {
   color: #888;
 }
-
-
-/* 
-
-::-webkit-scrollbar {
-  width: 10px !important;
-}
-
-::-webkit-scrollbar-track {
-  background: #fff !important;
-}
-
-::-webkit-scrollbar-thumb {
-  background: rgb(75, 237, 0) !important;
-  border-radius: 10px !important;
-}
-
-::-webkit-scrollbar-thumb:active {
-  background: #646cffaa !important;
-} */
