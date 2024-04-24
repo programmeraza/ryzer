@@ -1,10 +1,43 @@
 .pc {
-    
+    width: 100%;
+    background-color: #111;
+    text-align: center;
+    padding: 50px;
     // &__wrapper {
-
+        
     // }
     &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    &__title {
+        color: #44d62c;
+        font-size: 2.25rem;
+        font-weight: 300;
+        letter-spacing: 1px;
+        line-height: 2.25rem;
+        padding-bottom: 15px;
+    }
+    &__text {
+        max-width: 1050px;  
+        margin: 0 auto;
+        color: #999;
+        font-size: 1.155rem;
+        font-weight: 700;
+        line-height: 1.75rem;
+        text-align: center;
+
+    }
+    &__cards-wrap {
+        background-color: #252525;
         width: 100%;
-        background-color: #111;
+        
+    }
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 20px;
     }
 }

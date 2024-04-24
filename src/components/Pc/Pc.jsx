@@ -1,5 +1,6 @@
 import React from 'react'
 import './Pc.scss'
+import { Link } from 'react-scroll'
 
 const PC = () => {
   return (
@@ -14,6 +15,28 @@ const PC = () => {
                     aRGB Chroma powered battlestation.
                     </p>
                 </div>
+                    {/* <div className="pc__cards-wrap">
+                      <div className='pc__cards'>
+                          <div className="pc__card">
+                            <img src="./headphone.jpg" alt="asd" />
+                            <h3 className='pc__title-card'>HEADSETS</h3>
+                            <p className='pc__text-card'>Tuned for gaming, lifestyle, or a perfect mix of both and also...</p>
+                            <Link>Learn More →</Link>
+                          </div>
+                          <div className="pc__card">
+                            <img src="./headphone" alt="asd" />
+                            <h3 className='pc__title-card'>HEADSETS</h3>
+                            <p className='pc__text-card'>Tuned for gaming, lifestyle, or a perfect mix of both and also...</p>
+                            <Link>Learn More →</Link>
+                          </div>
+                          <div className="pc__card">
+                            <img src="./headphone" alt="asd" />
+                            <h3 className='pc__title-card'>HEADSETS</h3>
+                            <p className='pc__text-card'>Tuned for gaming, lifestyle, or a perfect mix of both and also...</p>
+                            <Link>Learn More →</Link>
+                          </div>
+                      </div>
+                    </div> */}
             </div>
         </div>
     </div>
