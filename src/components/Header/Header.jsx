@@ -28,8 +28,18 @@ const Header = () => {
                 className='header__open'
             >
                 <div className='header__bgd'>
+                  <div className="header__flex-logo">
+                  <button className='header__bur' onClick={toggleDrawer}>
+                    <span></span>
+                    <span className='short'></span>
+                    <span></span>
+                  </button>
+                  <Link to={'/'} className="header__logo2">
+                    <img width={35} src={Logo} alt="asd" />                    
+                  </Link>
+                  </div>
                   <ul className='header__links'>
-                   <Link to={'/pc'} className="header__nav">
+                   <Link to={'/pc'}>
                       <li className="header__link">PC</li>
                     </Link>
                     <Link>
@@ -41,17 +51,16 @@ const Header = () => {
                     <Link>
                       <li className="header__link">Services</li>
                     </Link>
-                    <Link to={'/latest'}>
+                    <Link to={'/store'}>
                       <li className="header__link">Store</li>
                     </Link>
                     <Link>
                       <li className="header__link">Sign up</li>
                     </Link>
                     <Link>
-                      <li className="header__li">Log in</li>
+                      <li className="header__link">Log in</li>
                     </Link>
                   </ul>
-                  <input placeholder='Search' className='header__search' type="text" />
                 </div>
             </Drawer>
                 <Link to={'/'} className="header__logo">
@@ -71,7 +80,7 @@ const Header = () => {
                     <Link>
                       <li className="header__li">Services</li>
                     </Link>
-                    <Link to={'/latest'}>
+                    <Link to={'/store'}>
                       <li className="header__li">Store</li>
                     </Link>
                     <Link>

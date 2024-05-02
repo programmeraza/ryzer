@@ -10,6 +10,7 @@ import Chairs from '../Chairs/Chairs';
 import Console from '../Console/Console';
 import Mobile from '../Mobilee/Mobile';
 import Gear from '../Gear/Gear';
+import Loader from '../Loader/Loader';
 
 const Products = () => {
   const [data, setData] = useState({
@@ -23,7 +24,7 @@ const Products = () => {
     mobile: [],
     gear: []
   });
-  useEffect(()=>{
+  useEffect(() => {
     fetchData();
   }, []);
   const fetchData = async () => {
@@ -32,18 +33,19 @@ const Products = () => {
       return {
         ...prev,
         mice: data.filter((product) => product.category === "MICE"),
-        laptop:  data.filter((product) => product.category === "Laptop"),
-        keyboard:  data.filter((product) => product.category === "Keyboards"),
-        headsets:  data.filter((product) => product.category === "Headsets"),
-        streaming:  data.filter((product) => product.category === "Streaming"),
-        chairs:  data.filter((product) => product.category === "Chairs"),
-        console:  data.filter((product) => product.category === "Console"),
-        mobile:  data.filter((product) => product.category === "Mobile"),
-        gear:  data.filter((product) => product.category === "Gear"),
+        laptop: data.filter((product) => product.category === "Laptop"),
+        keyboard: data.filter((product) => product.category === "Keyboards"),
+        headsets: data.filter((product) => product.category === "Headsets"),
+        streaming: data.filter((product) => product.category === "Streaming"),
+        chairs: data.filter((product) => product.category === "Chairs"),
+        console: data.filter((product) => product.category === "Console"),
+        mobile: data.filter((product) => product.category === "Mobile"),
+        gear: data.filter((product) => product.category === "Gear"),
       }
     })
   }
-  console.log(data)
+  if (!data?.mice?.length) return <Loader />
+  console.log(data?.mice)
   return (
     <div>
       <Mouse mice={data.mice} />

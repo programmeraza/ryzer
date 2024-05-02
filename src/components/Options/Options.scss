@@ -6,6 +6,12 @@
     border-bottom: 1px solid #44d62c;
     box-shadow: 1px 1px 5px 8px rgba(67,214,44,.2);
     padding: 10px 0;
+    @media (max-width: 786px) {
+        top: -22px;
+    }
+    @media (max-width: 320px) {
+        top: -22px;
+    }
     &__wrapper {
         display: flex;
         align-items: center;

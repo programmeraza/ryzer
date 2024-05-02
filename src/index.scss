@@ -81,3 +81,104 @@ h6 {
     background-color: rgb(75, 237, 0);
     color: #000;
 }
+
+// catalog
+
+.catalog {
+    margin: 20px 0;
+
+    &__wrapper{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px 10px;
+        @media (max-width: 1024px) {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            padding: 0 30px;
+        }
+        @media (max-width: 768px) {
+            display: grid;
+            grid-template-columns: auto auto;
+            padding: 0 40px;
+        }
+        @media (max-width: 425px) {
+            display: grid;
+            grid-template-columns: auto;
+            padding: 0 30px;
+        }
+    }
+    &__name {
+        font-size: 20px;
+        color: #fff;
+    }
+    &__desc {
+        font-size: 13px;
+        color: #888;
+    }
+    &__btm {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: auto;
+        button {
+            width: 55px;
+            height: 25px;
+            background-color: rgb(75, 237, 0);
+            color: #000;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 15px;
+            font-weight: 600;
+            transition: all 0.5s ease;
+            &:hover {
+                background-color: transparent;
+                border: 1px solid rgb(75, 237, 0);
+                color: rgb(75, 237, 0);
+                text-decoration: none;
+            }
+        }
+    }
+    &__card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+        max-width: 600px;
+        background-color: #111;
+        overflow: hidden;
+        &:hover {
+            img {
+                scale: 1.1;
+            }
+        }
+    }
+    &__content{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+        height: 100%;
+        margin-top: auto;
+        padding: 15px;
+    }
+    &__top{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        background-color: #252525;
+        img {
+            margin: 0 auto;
+            width: 200px;
+            transition: scale 0.2s ease;
+        }
+    }
+    &__main-title {
+        @media (max-width: 320px) {
+            max-width: 350px;
+            margin: 0 30px;
+            margin-bottom: 20px;
+        }
+    }
+}

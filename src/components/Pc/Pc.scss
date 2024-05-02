@@ -3,9 +3,9 @@
     background-color: #111;
     text-align: center;
     padding: 50px;
-    // &__wrapper {
-        
-    // }
+    &__wrapper {
+        margin: 0 auto;
+    }
     &__content {
         display: flex;
         flex-direction: column;
@@ -27,17 +27,166 @@
         font-weight: 700;
         line-height: 1.75rem;
         text-align: center;
-
     }
-    &__cards-wrap {
+    &__section2 {
         background-color: #252525;
         width: 100%;
-        
+        padding: 30px 0;
+
     }
     &__cards {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
+        justify-content: space-between;
+        margin-right: 10px;
+    }
+    &__card {
+        background: #111;
+        margin: 30px 0;
+        text-align: start;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 350px;
+        @media (max-width: 320px) {
+            width: 310px;
+        }
+        img {
+            width: 350px;
+            @media (max-width: 320px) {
+                max-width: 295px;
+            }
+        }
+    }
+    &__card-flex {
+        border-bottom: 1px solid #44d62c;
+        padding: 0 10px 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    &__link-card {
+        color: #44d62c;
+        cursor: pointer;
+        transition:  transform, 1s;
+        &:hover {
+            transform: scale(1.02);
+        }
+    }
+    &__cards-2 {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
         gap: 20px;
+        @media (max-width: 320px) {
+            display: grid;
+            grid-template-columns: auto;
+            align-items: center;
+            
+        }
+    }
+    &__card-left {
+        background: url(https://assets2.razerzone.com/images/pnx.assets/cd9237a6f61e604675e80e0c098f5a64/mice-category-558x587-desktop.jpg) no-repeat 50% / cover;
+        border-bottom: 1px solid #44d62c;
+        padding-top: 50px;
+        text-align: center;
+        width: 100%;
+        height: 500px;
+    }
+    &__card-right {
+        background: url(https://assets2.razerzone.com/images/pnx.assets/cd9237a6f61e604675e80e0c098f5a64/mousemats-category-558x587-desktop.jpg) no-repeat 50% / cover;
+        border-bottom: 1px solid #44d62c;
+        padding-top: 50px;
+        text-align: center;
+        width: 100%;
+        height: 500px;
+    }
+    &__card-left2 {
+        background: url(https://assets2.razerzone.com/images/pnx.assets/cd9237a6f61e604675e80e0c098f5a64/keyboards-category-558x587-desktop.jpg) no-repeat 50% / cover;
+        border-bottom: 1px solid #44d62c;
+        padding-top: 50px;
+        text-align: center;
+        width: 100%;
+        height: 500px;
+    }
+    &__card-right2 {
+        background: url(https://assets2.razerzone.com/images/pnx.assets/cd9237a6f61e604675e80e0c098f5a64/audio-category-558x587-desktop.jpg) no-repeat 50% / cover;
+        border-bottom: 1px solid #44d62c;
+        padding-top: 50px;
+        text-align: center;
+        width: 100%;
+        height: 500px;
+    }
+    &__bgr {
+        background: url(https://assets2.razerzone.com/images/pnx.assets/cd2d636f26bd91dd99923c71b9e84a83/complete-your-set-up-1920x700-desktop-cat-banner.jpg) no-repeat 50% / cover;
+        border-bottom: 1px solid #44d62c;
+        height: 699px;
+        width: 100%;
+    }
+    &__section3 {
+        text-align: center;
+    }
+    &__title-3 {
+        font-size: 1.725em;
+        font-weight: 600;
+        letter-spacing: .0625rem;
+        line-height: 1.875rem;
+        padding-top: 70px;
+    }
+    &__text-3 {
+        font-size: 1.1rem;
+        font-weight: 300;
+        padding: 1rem 0;
+        color: #999;
+    }
+    &__section4 {
+        background-image: url(../../../public/ryzer_boy.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &__empty {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    &__empty-pustoy {
+        width: 100%;
+        height: 400px;
+        @media (max-width: 320px) {
+            display: none;
+        }
+    }
+    &__empty-zapolnen {
+        padding: 60px 20px 0 130px;
+        @media (max-width: 320px) {
+            padding: 30px 30px 30px 100px;
+        }
+    }
+    &__title-empty {
+        color: #44d62c;
+        @media (max-width: 320px) {
+            font-size: 30px;
+        }
+    }
+    &__text-empty {
+        color: #999;
+        font-size: 18px;
+        padding-top: 10px;
+    }
+    &__empty-img {
+        margin-top: 20px;
+        @media (max-width: 320px) {
+            display: none;
+        }
+    }
+    &__text-empty3 {
+        color: #888;
+        font-size: 12px;
+        font-weight: 700;
+        padding-top: 20px;
+        @media (max-width: 320px) {
+            display: none;   
+        }
     }
 }
