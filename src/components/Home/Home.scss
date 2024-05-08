@@ -1,0 +1,219 @@
+.home {
+    background-image: url(../../../public/home-laptop.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 91vh;
+    width: 100%;
+    border-bottom: 3px solid #393838;
+    text-align: center;
+    &__title {
+        font-size: clamp(1.875rem, 1.42rem + 2.27vw, 3.125rem);
+        letter-spacing: 3px;
+        padding-top: 40px;
+    }
+    &__title1 {
+        font-size: clamp(0.938rem, 0.597rem + 1.7vw, 1.875rem);
+        font-weight: 300;
+    }
+    &__link-flex {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+    &__link {
+        cursor: pointer;
+        font-size: clamp(0.813rem, 0.54rem + 1.36vw, 1.563rem);
+        font-weight: 400;
+        color: #fff;
+        span {
+            color: #44d62c;
+        }
+        &:hover {
+            border-bottom: 2px solid #44d62c;
+        }
+    }
+}
+
+.home1 {
+    background-image: url(../../../public/home-chairs.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 91vh;
+    width: 100%;
+    border-bottom: 3px solid #393838;
+    text-align: center;
+    padding-top: 20px;
+    &__link-btn {
+        cursor: pointer;
+        margin-top: 5px;
+        text-align: center;
+    }
+    &__btn {
+        background: #fa9a01;
+        cursor: pointer;
+        text-align: start;
+        width: 100px;
+        border: 1px solid #000;
+        transition: all 1s;
+        padding: 8px 0;
+        &:hover {
+            background: none;
+            border: 1px solid #44d62c;
+            color: #44d62c;
+        }
+    }
+    &__btn-span {
+        font-size: 10px;
+        font-weight: 700;
+        padding-left: 5px;
+        display: block;
+        padding-bottom: 5px;
+    }
+    &__btn-span2 {
+        font-size: 15px;
+        padding-left: 5px;
+        font-weight: 600;
+    }
+}
+
+.home2 {
+    background-image: url(../../../public/home-keyboards.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 91vh;
+    width: 100%;
+    border-bottom: 3px solid #393838;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: auto auto;
+    @media (max-width: 425px) {
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+
+.left, .right {
+    border-bottom: 4.5px solid #393838;
+    height: 80vh;
+    width: 100%;
+}
+
+.left {
+    background-image: url(../../../public/home-laptop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-right: 4.5px solid #393838;
+    border-left:  4.5px solid #393838;
+    text-align: center;
+    &__btn-grid {
+        cursor: pointer;
+        margin-top: 40px;
+        text-align: center;
+    }
+    &__g-bigger {
+        font-size: clamp(1.25rem, 0.795rem + 2.27vw, 2.5rem);
+        padding-top: 10px;
+    }
+    &__g-big {
+        font-size: clamp(0.938rem, 0.597rem + 1.7vw, 1.875rem);
+        padding-top: 6px;
+    }
+    &__gridbox {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        padding-top: 10px;
+        @media (max-width: 320px) {
+            display: flex;
+            gap: 12px;
+        }
+    }
+    &__link {
+        cursor: pointer;
+        font-size: clamp(0.875rem, 0.784rem + 0.45vw, 1.125rem);
+        font-weight: 400;
+        color: #fff;
+        span {
+            color: #44d62c;
+        }
+        &:hover {
+            border-bottom: 2px solid #44d62c;
+        }
+    }
+}
+
+.right {
+    background-image: url(../../../public/home-headphone.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-right: 4.5px solid #393838;
+    border-left:  4.5px solid #393838;
+    text-align: center;
+}
+
+.left1, .right1 {
+    border-bottom: 4.5px solid #393838;
+    border-top: 4.5px solid #393838;
+    height: 80vh;
+    width: 100%;
+}
+
+.left1 {
+    background-image: url(../../../public/home-kover.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-right: 4.5px solid #393838;
+    border-left:  4.5px solid #393838;
+    text-align: center;
+    &__link-btn {
+        padding-top: 15px;
+    }
+}
+
+.right1 {
+    background-image: url(../../../public/home-laptop3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-right: 4.5px solid #393838;
+    border-left:  4.5px solid #393838;
+    text-align: center;
+}
+
+.left2, .right2 {
+    border-bottom: 4.5px solid #393838;
+    border-top: 4.5px solid #393838;
+    height: 80vh;
+    width: 100%;
+}
+
+.left2 {
+    background-image: url(../../../public/home-people.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-right: 4.5px solid #393838;
+    border-left:  4.5px solid #393838;
+    text-align: center;
+}
+
+.right2 {
+    background-image: url(../../../public/home-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-right: 4.5px solid #393838;
+    border-left:  4.5px solid #393838;
+    text-align: center;
+}
+

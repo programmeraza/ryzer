@@ -1,14 +1,14 @@
 import React from 'react'
 import Header from '../components/Header/Header'
-import Footer from '../components/Footer/Footer'
+import Error from '../components/Error/Error.jsx'
 
-const Mobile = () => {
+const ErrorPages = () => {
   return (
     <>
     <Header />
-    <Footer />
+    <Error />
     </>
   )
 }
 
-export default Mobile
+export default ErrorPages

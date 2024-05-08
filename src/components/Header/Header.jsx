@@ -35,17 +35,17 @@ const Header = () => {
                     <span></span>
                   </button>
                   <Link to={'/'} className="header__logo2">
-                    <img width={35} src={Logo} alt="asd" />                    
+                    <img width={35} src={Logo} alt="asd" />
                   </Link>
                   </div>
                   <ul className='header__links'>
                    <Link to={'/pc'}>
                       <li className="header__link">PC</li>
                     </Link>
-                    <Link>
+                    <Link to={'/mobile'}>
                       <li className="header__link">Mobile</li>
                     </Link>
-                    <Link>
+                    <Link to={'/'}>
                       <li className="header__link">Home</li>
                     </Link>
                     <Link>
@@ -64,17 +64,17 @@ const Header = () => {
                 </div>
             </Drawer>
                 <Link to={'/'} className="header__logo">
-                  <img width={35} src={Logo} alt="asd" />                    
+                  <img width={35} src={Logo} alt="asd" />
                 </Link>
                 <nav>
                 <ul className='header__link'>
                    <Link to={'/pc'} className="header__nav">
                       <li className="header__li">PC</li>
                     </Link>
-                    <Link>
+                    <Link to={'/mobile'}>
                       <li className="header__li">Mobile</li>
                     </Link>
-                    <Link>
+                    <Link to={'/'}>
                       <li className="header__li">Home</li>
                     </Link>
                     <Link>

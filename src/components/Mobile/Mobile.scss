@@ -1,0 +1,103 @@
+.mobile {
+    background: #111;
+    height: -webkit-max-content;
+    height: max-content;
+    padding: 3rem 1rem;
+    text-align: center;
+    &__title {
+        color: #44d62c;
+        font-size: 2.25rem;
+        font-weight: 400;
+        line-height: 2.25rem;
+        padding-bottom: 1rem;
+    }
+    &__text {
+        color: #999;
+        font-size: 19px;
+    }
+    &__head {
+        background-image: url(../../../public/mobile-mobile.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 700px;
+        width: 100%;
+    }
+    &__txt {
+        padding: 3rem 20px;
+        text-align: center;
+    }
+    &__title1 {
+        font-size: 28px;
+        letter-spacing: 2px;
+        margin-bottom: 16px;
+    }
+    &__text1 {
+        color: #999;
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+    &__link {
+        color: #44d62c;
+    }
+    &__grid {
+        background: #252525;
+        height: -webkit-max-content;
+        height: max-content;
+        padding: 2rem 10px;
+        width: 100%;
+    }
+    &__cards {
+        grid-gap: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    &__card {
+        background: #111;
+        border-bottom: 1px solid #44d62c;
+        height: -webkit-max-content;
+        height: max-content;
+        padding-bottom: 10px;
+        width: 470px;
+        @media (max-width: 768px) {
+           margin: 0 auto;
+        }
+        @media (max-width: 550px) {
+            width: 250px;
+        }
+    }
+    &__title2 {
+        min-height: 44px;
+        font-size: 18px;
+        font-weight: 400;
+        padding: 0 15px;
+        padding-top: 10px;
+    }
+    &__text2 {
+        color: #999;
+        font-size: 14px;
+        min-height: 104px;
+        padding: 10px 15px;
+    }
+    &__link2 {
+        padding-left: 15px;
+        color: #44d62c;
+    }
+    &__img {
+        object-fit: cover;
+        width: 100%;
+    }
+    &__boy {
+        background-image: url(../../../public/mobile-boy.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        border-bottom: 1px solid #44d62c;
+        height: 700px;
+    }
+}
