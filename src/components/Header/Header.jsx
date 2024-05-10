@@ -48,16 +48,16 @@ const Header = () => {
                     <Link to={'/'}>
                       <li className="header__link">Home</li>
                     </Link>
-                    <Link>
+                    <Link to={'/services'}>
                       <li className="header__link">Services</li>
                     </Link>
                     <Link to={'/store'}>
                       <li className="header__link">Store</li>
                     </Link>
-                    <Link>
+                    <Link to={'/signup'}>
                       <li className="header__link">Sign up</li>
                     </Link>
-                    <Link>
+                    <Link to={'/login'}>
                       <li className="header__link">Log in</li>
                     </Link>
                   </ul>
@@ -77,16 +77,16 @@ const Header = () => {
                     <Link to={'/'}>
                       <li className="header__li">Home</li>
                     </Link>
-                    <Link>
+                    <Link to={'/services'}>
                       <li className="header__li">Services</li>
                     </Link>
                     <Link to={'/store'}>
                       <li className="header__li">Store</li>
                     </Link>
-                    <Link>
+                    <Link to={'/signup'}>
                       <li className="header__li">Sign up</li>
                     </Link>
-                    <Link>
+                    <Link to={'/login'}>
                       <li className="header__li">Log in</li>
                     </Link>
                   </ul>

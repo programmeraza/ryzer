@@ -1,12 +1,15 @@
 import React from 'react'
 import Header from '../components/Header/Header'
+import Footer from '../components/Footer/Footer'
 
-const Signup = () => {
+const SignupPages = () => {
   return (
     <>
     <Header />
+
+    <Footer />
     </>
   )
 }
 
-export default Signup
+export default SignupPages
