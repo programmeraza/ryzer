@@ -70,59 +70,59 @@ const Options = () => {
                     modules={[Pagination]}
                     className="mySwiper"
                 >
-                  <SwiperSlide> 
-                    <Link className="option__link">
+                  <SwiperSlide>
+                    <a href={'#laptops'} className="option__link">
                      <img src={Laptop} alt="asd" />
                      <p>Laptops</p>
-                    </Link>
+                    </a>
                   </SwiperSlide>
                   <SwiperSlide>
-                  <Link className="option__link">
+                  <a href={'#mice'} className="option__link">
                     <img src={Mice} alt="asd" />
                     <p>Mice</p>
-                  </Link>
+                  </a>
                   </SwiperSlide>
                   <SwiperSlide>
-                  <Link className="option__link">
+                  <a href={'#keyboards'} className="option__link">
                     <img src={Keyboards} alt="asd" />
                     <p>Keyboards</p>
-                   </Link>
+                   </a>
                   </SwiperSlide>
                   <SwiperSlide>
-                  <Link className="option__link">
+                  <a href={'#headsets'} className="option__link">
                     <img src={Headsets} alt="asd" />
                     <p>Headsets</p>
-                </Link> 
+                  </a>
                   </SwiperSlide>
                   <SwiperSlide>
-                  <Link className="option__link">
+                  <a href={'#streaming'} className="option__link">
                     <img src={Streaming} alt="asd" />
                     <p>Streaming</p>
-                </Link>
+                  </a>
                   </SwiperSlide>
                   <SwiperSlide>
-                  <Link className="option__link">
+                  <a href={'#chairs'} className="option__link">
                     <img src={Chairs} alt="asd" />
                     <p>Chairs</p>
-                </Link>
+                  </a>
                   </SwiperSlide>
                   <SwiperSlide>
-                  <Link className="option__link">
+                  <a href={'#console'} className="option__link">
                     <img src={Console} alt="asd" />
                     <p>Console</p>
-                </Link>
+                  </a>
                   </SwiperSlide>
                   <SwiperSlide>
-                  <Link className="option__link">
+                  <a href={'#mobile'} className="option__link">
                     <img src={Mobile} alt="asdf" />
                     <p>Mobile</p>
-                </Link>
+                  </a>
                   </SwiperSlide>
                   <SwiperSlide>
-                  <Link className="option__link">
+                  <a href={'#gear'} className="option__link">
                     <img src={Gear} alt="asd" />
                     <p>Gear</p>
-                </Link>
+                  </a>
                   </SwiperSlide>
                  </Swiper>
                 </div>
