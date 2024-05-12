@@ -83,7 +83,7 @@ const Options = () => {
                   </a>
                   </SwiperSlide>
                   <SwiperSlide>
-                  <a href={'#keyboards'} className="option__link">
+                  <a href={'#keyboard'} className="option__link">
                     <img src={Keyboards} alt="asd" />
                     <p>Keyboards</p>
                    </a>
