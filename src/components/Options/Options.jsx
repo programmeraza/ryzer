@@ -1,6 +1,5 @@
 import React from 'react'
 import './Options.scss'
-import { Link } from 'react-router-dom'
 import Laptop from "../.././assets/Laptop.png"
 import Mice from "../.././assets/Mice.png"
 import Keyboards from "../.././assets/Keyboards.png"

@@ -20,7 +20,7 @@
         padding-bottom: 15px;
     }
     &__text {
-        max-width: 1050px;  
+        max-width: 1050px;
         margin: 0 auto;
         color: #999;
         font-size: 1.155rem;
@@ -83,7 +83,7 @@
             display: grid;
             grid-template-columns: auto;
             align-items: center;
-            
+
         }
     }
     &__card-left {
@@ -159,8 +159,14 @@
     }
     &__empty-zapolnen {
         padding: 60px 20px 0 130px;
+        @media (max-width: 425px) {
+            padding: 30px 30px 30px 70px;
+        }
+        @media (max-width: 375px) {
+            padding: 30px 30px 30px 15px;
+        }
         @media (max-width: 320px) {
-            padding: 30px 30px 30px 100px;
+            padding: 30px 30px 30px 130px;
         }
     }
     &__title-empty {
@@ -186,7 +192,7 @@
         font-weight: 700;
         padding-top: 20px;
         @media (max-width: 320px) {
-            display: none;   
+            display: none;
         }
     }
 }

@@ -5,6 +5,7 @@ import Icon from "../../assets/korzina.svg"
 import { Link } from 'react-router-dom'
 import Drawer from 'react-modern-drawer'
 import 'react-modern-drawer/dist/index.css'
+import { colors } from '@mui/material'
 
 const Header = () => {
   const [isOpen, setIsOpen] = React.useState(false)
